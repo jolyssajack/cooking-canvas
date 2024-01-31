@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+    <title>Recipe Finder</title>
+  </head>
+  <body background="images/Black Background.jpg">
+    <div class="content-card">
+      <div class="heading">
+        <h1>Cooking Canvas</h1>
+        <p>Paint Your Plate with What You Already Own🍪</p>
+      </div>
+      <div class="todo-app">
+        <h2>Ingredient List 📝</h2>
+        <p>Enter ingredients to get recipes</p>
+        <div class="row">
+          <input type="text" id="input-box" placeholder="new ingredient..." />
+          <button class="button" onclick="addTask()">Add</button>
+        </div>
+        <ul id="list-container">
+          <!-- <li class="checked">Task 1</li>
+          <li>Task 2</li>
+          <li>Task 3</li> -->
+        </ul>
+        <div id="find-recipes">
+          <button class="recipes-btn" onclick="findReceipe()">
+            Find recipes
+          </button>
+        </div>
+      </div>
+      </div>
+
+      <!-- Recipe Result -->
+    <div class="wrapper">
+        <div class="recipes-result">
+          <h2 class="title">Your Search Results:</h2>
+            <div id="recipes">
+                <!-- meal item -->
+                    <!-- <div class="meal-item">
+                        <div class="meal-img">
+                            <img src="images/food.jpg" alt="food" />
+                        </div>
+                        <div class="meal-name">
+                            <h3>Egg Muffin</h3>
+                            <a href="#" class="recipe-btn">Get Recipe</a>
+                        </div>
+                    </div> -->
+            <!-- end of meal item -->
+            </div>
+        </div>
+    </div>
+    
+    <script src="src/index.js"></script>
+  </body>
+</html>
